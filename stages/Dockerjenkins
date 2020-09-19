@@ -1,0 +1,17 @@
+Jenkins user privelges to run docker:-
+sudo usermod -aG docker mstarin
+
+sudo systemctl restart jenkins 
+
+IN Jenkins UI Manageplugis :-
+nodejs
+docker-build
+pipeline
+
+Global Tool COnfiguration and COnfigure nodejs:-
+Manage Jenkins - Global Tool Configuration -> set a version for nodejs
+
+Add dockerhub credentials to jenkins:-
+add your dockerhub username and password in your credentials section
+
+Create a new pipeline job with pipeline scripts and run them
